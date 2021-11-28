@@ -77,14 +77,14 @@ This is a task manager api built with NodeJs. It features authentication, full C
 
 <!-- INTERACTING WITH THE API -->
 TO CREATE USERS
-Method: POST
-ENDPOINT: "localhost:3000/users"
-DATA-TYPE: JSON
+Method: POST\
+ENDPOINT: "localhost:3000/users"\
+DATA-TYPE: JSON\
 body: {
     "name": "Bassit Owolabi",
     "email":"barseetbrn@gmail.com",
     "password": "123456"
-}
+}\
 
 TO LOGIN USERS
 Method: POST
