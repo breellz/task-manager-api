@@ -76,6 +76,10 @@ This is a task manager api built with NodeJs. It features authentication, full C
 ```npm test```
 
 <!-- INTERACTING WITH THE API -->
+App can be tested without cloning as it is deployed on the web\
+PRODUCTION EDNPOINT: "https://breellz-task-manager.herokuapp.com"
+
+
 TO CREATE USERS
 Method: POST\
 ENDPOINT: "localhost:3000/users"\
