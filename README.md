@@ -76,104 +76,108 @@ This is a task manager api built with NodeJs. It features authentication, full C
 ```npm test```
 
 <!-- INTERACTING WITH THE API -->
+App can be tested without cloning as it is deployed on the web\
+PRODUCTION EDNPOINT: "https://breellz-task-manager.herokuapp.com"
+
+
 TO CREATE USERS
-Method: POST
-ENDPOINT: "localhost:3000/users"
-DATA-TYPE: JSON
+Method: POST\
+ENDPOINT: "localhost:3000/users"\
+DATA-TYPE: JSON\
 body: {
     "name": "Bassit Owolabi",
     "email":"barseetbrn@gmail.com",
     "password": "123456"
 }
 
-TO LOGIN USERS
-Method: POST
-ENDPOINT: "localhost:3000/users/login"
-DATA-TYPE: JSON
+TO LOGIN USERS\
+Method: POST\
+ENDPOINT: "localhost:3000/users/login"\
+DATA-TYPE: JSON\
 body: {
     "email":"barseetbrn@gmail.com",
     "password": "123456"
 }
 
-TO LOGOUT USERS
-Method: POST
-ENDPOINT: "localhost:3000/users/logout"
+TO LOGOUT USERS\
+Method: POST\
+ENDPOINT: "localhost:3000/users/logout"\
+DATA-TYPE: JSON\
+
+TO LOGOUT ALL SESSIONS\
+Method: POST\
+ENDPOINT: "localhost:3000/users/logoutAll"\
 DATA-TYPE: JSON
 
-TO LOGOUT ALL SESSIONS
-Method: POST
-ENDPOINT: "localhost:3000/users/logoutAll"
-DATA-TYPE: JSON
-
-TO CREATE TASK
-Method: POST
-ENDPOINT: "localhost:3000/tasks"
-DATA-TYPE: JSON
+TO CREATE TASK\
+Method: POST\
+ENDPOINT: "localhost:3000/tasks"\
+DATA-TYPE: JSON\
 body: {
     "description": "store in production database ",
     "completed": false
 }
 
-TO CREATE TASK
-Method: GET
-ENDPOINT: "localhost:3000/users/me"
-DATA-TYPE: JSON
+TO view user profile\
+Method: GET\
+ENDPOINT: "localhost:3000/users/me"\
+DATA-TYPE: JSON\
 
-TO READ USER
-Method: GET
-ENDPOINT: "localhost:3000/users/id"
-DATA-TYPE: JSON
+TO READ USER\
+Method: GET\
+ENDPOINT: "localhost:3000/users/id"\
+DATA-TYPE: JSON\
 
-TO GET TASKS
-Method: GET
-ENDPOINT: "localhost:3000/tasks?sortby=createdAt:desc"
-DATA-TYPE: JSON
+TO GET TASKS\
+Method: GET\
+ENDPOINT: "localhost:3000/tasks?sortby=createdAt:desc"\
+DATA-TYPE: JSON\
 
-TO GET TASK
-Method: GET
-ENDPOINT: "localhost:3000/tasks/id"
-DATA-TYPE: JSON
+TO GET TASK\
+Method: GET\
+ENDPOINT: "localhost:3000/tasks/id"\
+DATA-TYPE: JSON\
 
-TO UPDATE USER
-Method: POST
-ENDPOINT: "localhost:3000/users/me"
-DATA-TYPE: JSON
+TO UPDATE USER\
+Method: POST\
+ENDPOINT: "localhost:3000/users/me"\
+DATA-TYPE: JSON\
 body: {
     "name": "",
     "password":
 }
 
-TO UPDATE TASK
-Method: POST
-ENDPOINT: "localhost:3000/tasks/id"
-DATA-TYPE: JSON
+TO UPDATE TASK\
+Method: POST\
+ENDPOINT: "localhost:3000/tasks/id"\
+DATA-TYPE: JSON\
 body: {
     "completed": false
 }
 
-TO DELETE USER
-Method: DELETE
-ENDPOINT: "localhost:3000/users/me"
+TO DELETE USER\
+Method: DELETE\
+ENDPOINT: "localhost:3000/users/me"\
 DATA-TYPE: JSON
 
-TO DELETE TASK
-Method: DELETE
-ENDPOINT: "localhost:3000/tasks/id"
-DATA-TYPE: JSON
+TO DELETE TASK\
+Method: DELETE\
+ENDPOINT: "localhost:3000/tasks/id"\
+DATA-TYPE: JSON\
 
 
-TO UPLOAD AVATAR
-Method: POST
-ENDPOINT: "localhost:3000/users/me/avatar"
-DATA-TYPE: form-data
-KEY: upload
-VALUE:image-file
+TO UPLOAD AVATAR\
+Method: POST\
+ENDPOINT: "localhost:3000/users/me/avatar"\
+DATA-TYPE: form-data\
+KEY: upload\
+VALUE:image-file\
 
 
-TO DELETE AVATAR
-Method: DELETE
-ENDPOINT: "localhost:3000/users/me/avatar"
-DATA-TYPE: JSON
+TO DELETE AVATAR\
+Method: DELETE\
+ENDPOINT: "localhost:3000/users/me/avatar"\
+DATA-TYPE: JSON\
 
 
 <!-- ROADMAP -->
